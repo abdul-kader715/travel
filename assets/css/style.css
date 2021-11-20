@@ -37,7 +37,11 @@ li {
 
 /*header area stert css*/
 .header-area {
-    margin-top: 45px;
+    padding-top: 45px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 11;
 }
 
 .header-wper {
@@ -81,7 +85,7 @@ li {
     width: 100%;
 }
 
-.menu-area li:hover>a {
+.menu-area li:hover > a {
     color: #F1A501;
 }
 
@@ -136,4 +140,108 @@ li {
     border: 1px solid#F1A501;
     border-radius: 5px;
     padding: 10px 25px;
+}
+
+/* benner area start css */
+.benner-area {
+    padding: 85px 0;
+    position: relative;
+    z-index: 1;
+}
+.benner-area::before{
+    position: absolute;
+    content: url(/assets/images/benner-right-bg.svg);
+    right: 0;
+    top: 0;
+}
+
+.benner-area img {
+    width: 100%;
+    height: 100%;
+}
+
+.benner-text {
+    margin-top: 130px;
+}
+
+.benner-text h5 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    color: #DF6951;
+    margin-bottom: 25px;
+}
+
+.benner-text h2 span {
+    position: relative;
+    z-index: 1;
+}
+
+.benner-text h2 span::before {
+    content: url(/assets/images/enjoy-botder.svg);
+    position: absolute;
+    top: 12px;
+    left: -20px;
+    height: 12px;
+    width: 100%;
+    z-index: -1;
+}
+
+.benner-text h2 {
+    font-family: Volkhov;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 89px;
+    margin-bottom: 30px;
+}
+
+.benner-text p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5E6282;
+    margin-bottom: 35px;
+}
+
+.benner-btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.benner-btn .more-btn {
+    background: #F1A501;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.benner-btn .more-btn a {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.video-icon {
+    margin-left: 45px;
+}
+
+.video-icon a i {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    background: #DF6951;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 17px 15px 14px 20px;
+}
+
+.video-icon a span {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    color: #686D77;
+    margin-left: 5px;
 }
