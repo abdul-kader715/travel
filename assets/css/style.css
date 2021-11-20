@@ -1,0 +1,139 @@
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 01;
+}
+
+li {
+    list-style: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+/*header area stert css*/
+.header-area {
+    margin-top: 45px;
+}
+
+.header-wper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-area li {
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.menu-area li:last-child {
+    padding-right: 0;
+}
+
+.menu-area li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    border-radius: 50px;
+    background: #F1A501;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in-out;
+}
+
+.menu-area li:hover>a::before {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(.5);
+    width: 100%;
+}
+
+.menu-area li:hover>a {
+    color: #F1A501;
+}
+
+.menu-area li a {
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 500;
+    color: #212832;
+    transition: .4s ease-in-out;
+    position: relative;
+}
+
+.header-btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-btn li {
+    margin-right: 5px;
+}
+
+.header-btn li button:hover {
+    border: 1px solid#F1A501;
+    border-radius: 5px;
+}
+
+.header-btn li button {
+    background: none;
+    border: none;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    transition: .4s ease-in-out;
+}
+
+.header-btn li button a {
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 500;
+    color: #212832;
+    transition: .4s ease-in-out;
+}
+
+.header-btn li button:hover>a {
+    color: #F1A501;
+}
+
+.header-btn li select {
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 500;
+    color: #212832;
+    border: 1px solid#F1A501;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
