@@ -150,7 +150,7 @@ li {
 }
 .benner-area::before{
     position: absolute;
-    content: url(/assets/images/benner-right-bg.svg);
+    content: url(../images/benner-right-bg.svg);
     right: 0;
     top: 0;
 }
@@ -178,7 +178,7 @@ li {
 }
 
 .benner-text h2 span::before {
-    content: url(/assets/images/enjoy-botder.svg);
+    content:url(../images/enjoy-botder.svg);
     position: absolute;
     top: 12px;
     left: -20px;
