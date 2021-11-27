@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    padding: 01;
+    padding: 0;
 }
 
 li {
@@ -499,7 +499,6 @@ li {
 }
 
 .trip-area {
-    margin-top: 40px;
     position: relative;
 }
 
@@ -584,7 +583,6 @@ li {
 
 .trip-icon li a {
     color: #84829A;
-
     transition: .4s ease-in-out;
 }
 
@@ -594,4 +592,198 @@ li {
 
 .trip-icon li:hover a {
     color: #ffffff;
+}
+
+.people-going {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.people-going li {
+    color: #84829A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.people-going li:last-child {
+    margin-right: 0;
+}
+
+.people-going .ongo {
+    margin-left: 300px;
+    position: relative;
+    font-size: 20px;
+}
+
+.people-going:hover>.ongo i {
+    color: #4152CA;
+}
+
+.people-going .ongo:hover.ongo .rome {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ongo .rome {
+    background: #ffffff;
+    height: 130px;
+    width: 300px;
+    border-radius: 18px;
+    position: absolute;
+    left: -214px;
+    top: -136px;
+    padding: 20px;
+    box-shadow: 0px 12px 20px 0px hsl(0deg 0% 0% / 17%);
+    transition: .4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ongo .rome .rome-wrep {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rome-wrep img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.rome-wrep .rome-text {}
+
+.rome-text h5 {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: #84829A;
+}
+
+.rome-wrep .rome-text h3 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    color: #080809;
+    margin-top: 10px;
+}
+
+.rome .trip-compl {
+    max-width: 156px;
+    margin-left: 80px;
+}
+
+.rome .trip-compl h4 {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: #080809;
+    margin-bottom: 5px;
+}
+
+.rome .trip-compl h4 span {
+    color: #8A79DF;
+}
+
+.trip-compl .progress {
+    height: 5px;
+    background: #F5F5F5;
+}
+
+.trip-compl .progress .progress-bar {
+    background: #8A79DF;
+}
+
+/* about area start css */
+.about-area {}
+
+.about-werp {
+    padding: 20px 30px;
+    border: 2px solid #F7F7F7;
+    border-radius: 10px;
+    z-index: -1;
+    margin: 80px 0px 0 70px;
+
+}
+
+.about-werp p {
+    padding-right: 40px;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #4E4E73;
+    margin-bottom: 45px;
+}
+
+.about-werp h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5E6282;
+    margin-bottom: 6px;
+}
+
+.about-werp .mor-red-btn {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(241, 90, 43);
+}
+
+.about-werp .mor-red-btn:hover .mor-red-item {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mor-red-item {
+    position: absolute;
+    top: -225px;
+    left: -84px;
+    max-width: 504px;
+    border-radius: 10px;
+    z-index: 11;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 12px 20px 0px hsl(0deg 0% 0% / 17%);
+    transition: .4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mor-red-img {
+    position: absolute;
+    top: -33px;
+    left: -36px;
+    height: 68px;
+    width: 68px;
+    border-radius: 100px;
+}
+
+.mor-red-item p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5E6282;
+    margin-bottom: 35px;
+}
+
+.mor-red-item h3 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: #5E6282;
+    margin-bottom: 5px;
+}
+
+.mor-red-item span {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5E6282;
+
 }
