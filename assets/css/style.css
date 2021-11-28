@@ -812,16 +812,26 @@ li {
 
 .subscribe-wrep::before {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 11;
+    content: url(/assets/images/sub-02.png);
+    top: -25px;
+    right: -25px;
+    z-index: -1;
+}
+
+.subscribe-wrep::after {
+    position: absolute;
+    content: url("/assets/images/sub-01.png");
+    bottom: -6px;
+    left: 20px;
+    z-index: -1;
 }
 
 .subscribe-wrep {
     padding: 70px 150px;
-    background: #DFD7F9;
+    background: #eeeeee;
     border-top-left-radius: 50px;
     position: relative;
+    z-index: 11;
 }
 
 .subscribe-text h2 {
@@ -877,5 +887,80 @@ li {
     background: #F1A501;
     border: none;
     color: #ffffff;
+}
 
+/* footer area stert css */
+.footer-area {
+    margin: 40px 0;
+}
+
+.f-logo a {
+    font-family: Poppins;
+    font-size: 44px;
+    font-weight: 500;
+    color: #181E4B;
+}
+
+.f-logo p {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    color: #5E6282;
+    padding-right: 40px;
+    margin: 0;
+}
+
+.f-menu h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #080809;
+    margin-bottom: 20px;
+}
+
+.f-menu ul li {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 12px;
+}
+
+.f-menu ul li a {
+    color: #5E6282;
+    transition: all .4s ease-in-out;
+}
+
+.f-menu ul li:hover a {
+    color: #F1A501;
+}
+
+.f-social {}
+
+.f-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.f-social ul li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: rgb(4, 104, 197);
+    margin-right: 15px;
+    font-size: 20px;
+
+}
+
+.f-social ul li a i {
+    color: #ffffff;
+}
+
+.f-social h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #080809;
 }
