@@ -812,7 +812,7 @@ li {
 
 .subscribe-wrep::before {
     position: absolute;
-    content: url(/assets/images/sub-02.png);
+    content: url(../images/sub-02.png);
     top: -25px;
     right: -25px;
     z-index: -1;
@@ -820,7 +820,7 @@ li {
 
 .subscribe-wrep::after {
     position: absolute;
-    content: url("/assets/images/sub-01.png");
+    content: url(../images/sub-01.png);
     bottom: -6px;
     left: 20px;
     z-index: -1;
