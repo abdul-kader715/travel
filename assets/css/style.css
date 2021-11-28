@@ -703,65 +703,26 @@ li {
 .about-area {}
 
 .about-werp {
-    padding: 20px 30px;
-    border: 2px solid #F7F7F7;
-    border-radius: 10px;
-    z-index: -1;
-    margin: 80px 0px 0 70px;
-
+    padding: 29px 10px;
 }
 
-.about-werp p {
-    padding-right: 40px;
-    font-size: 16px;
-    font-family: Poppins;
-    font-weight: 400;
-    color: #4E4E73;
-    margin-bottom: 45px;
-}
-
-.about-werp h2 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #5E6282;
-    margin-bottom: 6px;
-}
-
-.about-werp .mor-red-btn {
-    position: relative;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(241, 90, 43);
-}
-
-.about-werp .mor-red-btn:hover .mor-red-item {
-    opacity: 1;
-    visibility: visible;
-}
 
 .mor-red-item {
-    position: absolute;
-    top: -225px;
-    left: -84px;
-    max-width: 504px;
     border-radius: 10px;
-    z-index: 11;
     background: #ffffff;
-    padding: 30px;
-    box-shadow: 0px 12px 20px 0px hsl(0deg 0% 0% / 17%);
-    transition: .4s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
+    padding: 40px 45px;
+    border: 1px solid rgb(216, 214, 214);
+    position: relative;
 }
 
 .mor-red-img {
     position: absolute;
-    top: -33px;
-    left: -36px;
+    top: -26px;
+    left: -11px;
     height: 68px;
     width: 68px;
     border-radius: 100px;
+    z-index: 111;
 }
 
 .mor-red-item p {
@@ -769,7 +730,7 @@ li {
     font-size: 16px;
     font-weight: 500;
     color: #5E6282;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 
 .mor-red-item h3 {
@@ -785,5 +746,136 @@ li {
     font-size: 14px;
     font-weight: 500;
     color: #5E6282;
+
+}
+
+.slider {}
+
+.about-item .slick-arrow {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    color: #3d3d3d;
+}
+
+.about-item .slick-prev {
+    left: 549px;
+    top: 92px;
+    transform: translate(-50%);
+}
+
+.about-item .slick-next {
+    right: -30px;
+    top: 150px;
+}
+
+.about-item .slick-arrow.slick-prev:before {
+    content: '\f104' !important;
+    font-family: "fontawesome";
+    font-size: 20px;
+    color: #3d3d3d;
+    transform: rotate(89deg);
+}
+
+.about-item .slick-arrow.slick-next:before {
+    content: '\f105' !important;
+    font-family: "fontawesome";
+    font-size: 20px;
+    color: #3d3d3d;
+    transform: rotate(89deg);
+}
+
+/* partnership area start css */
+.partner-area {}
+
+.partner-item img {
+    padding: 10px 20px;
+    transition: .4s ease-in-out;
+    max-width: 150px;
+    height: 100px;
+}
+
+.partner-item img:hover {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 12px 20px 0px hsl(0deg 0% 0% / 17%);
+}
+
+/* subscribe area stert css */
+.subscribe-area {
+    margin: 100px 0;
+
+}
+
+.subscribe-wrep::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 11;
+}
+
+.subscribe-wrep {
+    padding: 70px 150px;
+    background: #DFD7F9;
+    border-top-left-radius: 50px;
+    position: relative;
+}
+
+.subscribe-text h2 {
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    color: #5E6282;
+    margin-bottom: 75px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-form .mail {
+    position: relative;
+    margin-right: 25px;
+}
+
+.subscribe-form .mail .mail-item {
+    width: 420px;
+    padding: 25px 10px 25px 65px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #39425D;
+
+}
+
+.subscribe-form .mail i {
+    width: 21px;
+    height: 18px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #39425D;
+    left: 40px;
+    top: 39px;
+    z-index: 11;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.subscribe-form .Sub-btn {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    padding: 22px 50px;
+    border-radius: 12px;
+    background: #F1A501;
+    border: none;
+    color: #ffffff;
 
 }
